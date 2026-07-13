@@ -161,9 +161,9 @@
   .quem h2{ font-size:1.5rem; font-weight:800; letter-spacing:.03em; text-transform:uppercase; color:var(--verde-esc); margin-bottom:18px; }
   .quem p{ color:var(--texto-2); margin-bottom:14px; font-size:1rem; }
   .quem p strong{ color:var(--texto); font-weight:700; }
-  .quem .foto{ position:relative; border-radius:14px; overflow:hidden; aspect-ratio:16/10; background:#E6DCC8; }
-  .quem .foto .ph{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:var(--texto-2); font-size:.85rem; text-align:center; padding:20px; }
-  .quem .foto img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .quem .foto{ margin:0; }
+  .quem .foto img{ width:100%; height:auto; border-radius:14px; box-shadow:0 10px 28px rgba(42,38,32,.14); }
+  .quem .foto figcaption{ margin-top:12px; text-align:center; font-size:.84rem; color:var(--texto-2); font-style:italic; }
 
   /* ---------- CONTATO FINAL ---------- */
   .final{ background:var(--bg-cru); border-top:1px solid var(--linha); padding:52px 0; }
@@ -338,14 +338,14 @@
     <div class="txt">
       <h2>Quem é a Picasso</h2>
       <p>A Picasso é uma estofaria de bairro aqui de Curitiba. Nada de loja grande: é uma oficina simples, de um senhor que <strong>reforma estofados há 45 anos</strong>.</p>
+      <p>A foto aí do lado é de 1981, dos primeiros serviços — <strong>e o capricho continua o mesmo</strong>.</p>
       <p>Você fala <strong>direto com quem faz o serviço</strong>. O preço é combinado antes, e o móvel volta pra sua casa do jeito que foi prometido.</p>
       <p><strong>Seu estofado em boas mãos.</strong></p>
     </div>
-    <div class="foto">
-      <!-- ATENÇÃO: foto temporária de banco de imagens (Pexels).
-           TROCAR pela foto da oficina real do Luiz (img/oficina.jpg). -->
-      <img src="img/oficina.jpg" alt="Cadeira sendo desmontada na oficina de estofados">
-    </div>
+    <figure class="foto">
+      <img src="img/picasso-1981.jpg" alt="Foto antiga de 1981: jovem estofador amarrando estofados no teto de um Volkswagen para entrega">
+      <figcaption>1981 — os primeiros serviços saindo pra entrega, no teto do Volkswagen.</figcaption>
+    </figure>
   </div>
 </section>
 
