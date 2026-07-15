@@ -76,6 +76,7 @@
   .hero .wrap{ display:grid; grid-template-columns:1fr 1fr; gap:0; align-items:stretch; padding:0 28px; }
   .hero .left{ padding:64px 44px 64px 0; align-self:center; }
   .hero .eyebrow{ font-size:.8rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--verde); }
+  .hero .eyebrow:empty{ display:none; }
   .hero h1{
     font-size:clamp(2.2rem,4.4vw,3.3rem); font-weight:900; line-height:1.1;
     letter-spacing:-.015em; margin:14px 0 0;
@@ -238,7 +239,7 @@
 <section class="hero" id="topo">
   <div class="wrap">
     <div class="left">
-      <span class="eyebrow" id="hero-eyebrow">Estofaria de bairro · Curitiba</span>
+      <span class="eyebrow" id="hero-eyebrow"></span>
       <h1 id="hero-title">Seu estofado<br>como novo,<br><span class="laranja">sem comprar outro.</span></h1>
       <p class="sub" id="hero-sub">Reforma e conserto de sofás, cadeiras, cabeceiras e bancos de carro. Serviço bem feito, preço justo e combinado antes de começar.</p>
       <a class="btn-big" href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener">
