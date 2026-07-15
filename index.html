@@ -125,18 +125,9 @@
 
   /* ---------- TRABALHOS ---------- */
   .trabalhos{ padding:20px 0 64px; }
-  .galeria{ display:grid; grid-template-columns:repeat(6,1fr); gap:14px; margin-top:40px; }
-  .fig{ position:relative; border-radius:10px; overflow:hidden; aspect-ratio:3/4; background:#E6DCC8; }
-  .fig .ph{
-    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
-    color:var(--texto-2); font-size:.78rem; text-align:center; padding:8px;
-  }
+  .galeria{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:40px; }
+  .fig{ position:relative; border-radius:10px; overflow:hidden; aspect-ratio:4/3; background:#E6DCC8; }
   .fig img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .fig .tag{
-    position:absolute; top:10px; left:10px; z-index:2;
-    background:#fff; color:var(--texto); font-size:.66rem; font-weight:800;
-    letter-spacing:.08em; padding:4px 9px; border-radius:5px; box-shadow:0 2px 6px rgba(0,0,0,.12);
-  }
   .ver-mais{ text-align:center; margin-top:34px; }
   .ver-mais a{
     display:inline-block; border:1.5px solid var(--linha); color:var(--texto);
@@ -297,16 +288,17 @@
 <section class="trabalhos" id="trabalhos">
   <div class="wrap">
     <div class="sec-title"><h2>Trabalhos</h2><div class="rule"></div></div>
+    <!-- fotos reais de serviços da Picasso -->
     <div class="galeria">
-      <!-- ATENÇÃO: fotos temporárias de banco de imagens (Pexels).
-           TROCAR pelos pares antes/depois REAIS dos trabalhos do Luiz —
-           basta substituir os arquivos em img/ mantendo os nomes. -->
-      <div class="fig"><span class="tag">ANTES</span><img src="img/antes-poltrona.jpg" alt="Poltrona com estofado rasgado, antes da reforma"></div>
-      <div class="fig"><span class="tag">DEPOIS</span><img src="img/depois-poltrona.jpg" alt="Poltrona reformada com tecido novo"></div>
-      <div class="fig"><span class="tag">ANTES</span><img src="img/antes-sofa.jpg" alt="Sofá antigo com tecido gasto, antes da reforma"></div>
-      <div class="fig"><span class="tag">DEPOIS</span><img src="img/depois-sofa.jpg" alt="Sofá reformado com tecido novo"></div>
-      <div class="fig"><span class="tag">ANTES</span><img src="img/antes-cadeira.jpg" alt="Poltrona com tecido desbotado, antes da reforma"></div>
-      <div class="fig"><span class="tag">DEPOIS</span><img src="img/depois-cadeira.jpg" alt="Poltrona de couro restaurada"></div>
+      <div class="fig"><img src="img/servico-sofa-retratil-bege.jpg" alt="Sofá retrátil bege de veludo pronto na oficina"></div>
+      <div class="fig"><img src="img/servico-poltrona-listrada-azul.jpg" alt="Poltrona reformada com tecido listrado azul e pés palito"></div>
+      <div class="fig"><img src="img/servico-sofa-couro-preto.jpg" alt="Sofá de couro preto entregue na casa do cliente"></div>
+      <div class="fig"><img src="img/servico-poltrona-na-bancada.jpg" alt="Poltrona de couro sendo reformada na bancada da oficina"></div>
+      <div class="fig"><img src="img/servico-sofa-quatro-lugares.jpg" alt="Sofá de quatro lugares recém-reformado na oficina"></div>
+      <div class="fig"><img src="img/servico-poltrona-couro-marrom.jpg" alt="Poltrona de couro marrom reformada, entregue na casa do cliente"></div>
+      <div class="fig"><img src="img/servico-sofa-canto-bege.jpg" alt="Sofá de canto bege com almofadas listradas pronto na oficina"></div>
+      <div class="fig"><img src="img/servico-poltronas-par.jpg" alt="Par de poltronas reformadas, uma listrada e uma floral"></div>
+      <div class="fig"><img src="img/servico-sofa-canto-cinza.jpg" alt="Sofá de canto cinza de veludo entregue na casa do cliente"></div>
     </div>
     <div class="ver-mais"><a href="https://wa.me/55XXXXXXXXXXX?text=Ol%C3%A1%2C%20gostaria%20de%20ver%20mais%20trabalhos." target="_blank" rel="noopener">Ver mais trabalhos</a></div>
   </div>
