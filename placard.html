@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Placa QR — Picasso Estofamentos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-cru:#F4F0E7; --verde:#2E7D32; --verde-esc:#215A24;
+    --laranja:#E8802A; --texto:#2A2620; --texto-2:#6B6459;
+    --carmim:#A61230; --vinho:#701020; --cinza:#9C9C9C;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  @page{ size:A4 portrait; margin:0; }
+  html,body{ background:#fff; }
+  body{
+    font-family:'Archivo',system-ui,sans-serif; color:var(--texto);
+    -webkit-font-smoothing:antialiased; -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  .page{
+    width:210mm; height:297mm; margin:0 auto; background:var(--bg-cru);
+    display:flex; flex-direction:column; align-items:center;
+    padding:20mm 18mm; text-align:center; position:relative; overflow:hidden;
+  }
+  .page::before{ content:""; position:absolute; top:0; left:0; right:0; height:9mm;
+    background:linear-gradient(90deg,var(--verde),#4FA33C 55%,#9BCF4E); }
+
+  /* logo */
+  .logo{ display:flex; align-items:center; gap:10px; margin-top:4mm; }
+  .logo img{ width:66px; height:auto; }
+  .logo .txt{ text-align:left; }
+  .logo .txt strong{
+    display:block; font-family:'Quicksand',sans-serif; font-weight:500; font-size:34px;
+    letter-spacing:.11em; line-height:.92; color:var(--vinho);
+  }
+  .logo .txt span{
+    display:block; font-family:'Quicksand',sans-serif; font-weight:400; font-size:14.5px;
+    color:var(--cinza); letter-spacing:.28em; margin-top:3px; text-indent:.28em; text-transform:lowercase;
+  }
+
+  h1{
+    margin-top:14mm; font-size:40px; font-weight:900; line-height:1.08; letter-spacing:-.01em;
+    max-width:15cm;
+  }
+  h1 .laranja{ color:var(--laranja); }
+  .sub{ margin-top:6mm; font-size:17px; color:var(--texto-2); max-width:13.5cm; line-height:1.5; }
+
+  /* cartão do QR */
+  .qr-card{
+    margin-top:12mm; background:#fff; border-radius:20px; padding:12mm 12mm 9mm;
+    box-shadow:0 10px 30px rgba(42,38,32,.14); border:1px solid #EAE3D3;
+  }
+  .qr-card img{ width:82mm; height:82mm; display:block; }
+  .aponte{
+    margin-top:7mm; display:inline-flex; align-items:center; gap:9px;
+    font-size:19px; font-weight:800; color:var(--verde-esc); letter-spacing:.01em;
+  }
+  .aponte svg{ width:24px; height:24px; fill:var(--verde-esc); }
+
+  /* CTA whatsapp */
+  .cta{
+    margin-top:11mm; display:inline-flex; align-items:center; gap:12px;
+    background:var(--verde); color:#fff; border-radius:14px; padding:15px 26px;
+  }
+  .cta svg{ width:30px; height:30px; fill:#fff; flex:none; }
+  .cta .l1{ font-size:14px; font-weight:600; opacity:.92; letter-spacing:.02em; }
+  .cta .l2{ font-size:26px; font-weight:800; line-height:1.05; }
+  .cta .txt{ text-align:left; }
+
+  .rodape{ margin-top:auto; padding-top:8mm; font-size:15px; color:var(--texto-2); font-weight:600; letter-spacing:.02em; }
+  .rodape b{ color:var(--texto); }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="logo">
+      <img src="img/logo-icon.png" alt="">
+      <span class="txt"><strong>PICASSO</strong><span>estofamentos</span></span>
+    </div>
+
+    <h1>Seu estofado como novo,<br><span class="laranja">sem comprar outro.</span></h1>
+    <p class="sub">Reforma e conserto de sofás, poltronas, cadeiras, cabeceiras e bancos de carro. Serviço bem feito, com preço justo combinado antes.</p>
+
+    <div class="qr-card">
+      <img src="qr/picasso-qr.png" alt="QR code — aponte a câmera do celular">
+      <div class="aponte">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4h2V5h4V3zm10 0h-4v2h4v4h2V5a2 2 0 0 0-2-2zM5 15H3v4a2 2 0 0 0 2 2h4v-2H5v-4zm16 0h-2v4h-4v2h4a2 2 0 0 0 2-2v-4zM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
+        Aponte a câmera do celular aqui
+      </div>
+    </div>
+
+    <div class="cta">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.03c-.24.68-1.42 1.31-1.95 1.35-.5.04-.98.22-3.3-.69-2.78-1.1-4.56-3.94-4.7-4.13-.14-.19-1.13-1.5-1.13-2.86 0-1.36.71-2.03.97-2.31.24-.26.53-.32.71-.32.18 0 .35 0 .51.01.16.01.38-.06.6.46.24.56.79 1.94.86 2.08.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.16-.29.36-.42.48-.14.13-.28.28-.12.55.16.27.72 1.18 1.54 1.92 1.06.94 1.95 1.24 2.23 1.38.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.36-.23.6-.14.24.09 1.55.73 1.81.86.26.13.44.2.5.31.06.11.06.64-.18 1.32z"/></svg>
+      <div class="txt">
+        <div class="l1">Orçamento pelo WhatsApp</div>
+        <div class="l2">(41) 99613-9707</div>
+      </div>
+    </div>
+
+    <div class="rodape"><b>Atendemos Curitiba</b> · atendimento com hora marcada</div>
+  </div>
+</body>
+</html>
